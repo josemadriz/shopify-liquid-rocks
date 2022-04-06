@@ -1,0 +1,13 @@
+
+<div id="text-block--{{ block.id }}" class="text-block">
+  <div class="wrapper">
+    <div style="text-align:{{ block.settings.text-align }}; margin-top:{{ block.settings.margin-top }}px; margin-bottom:{{ block.settings.margin-bottom }}px;">
+        {% if block.settings.title != blank %}
+            <h2 style="color: {{ block.settings.color-title }};">{{ block.settings.title | escape }}</h2>
+        {% endif %}
+        {% if block.settings.text != blank %}
+            <div>{{ block.settings.text }}</div>
+        {% endif %}
+    </div>
+  </div>
+</div>
